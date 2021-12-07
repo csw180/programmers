@@ -12,10 +12,10 @@ class Cache :
 		if not v.lower() in self.cache:
 			hit=False
 			if len(self.cache) < self.size:
-					self.cache.append(v.lower())
+				self.cache.append(v.lower())
 			else:
-					self.cache.pop(0)
-					self.cache.append(v.lower())
+				self.cache.pop(0)
+				self.cache.append(v.lower())
 		else:
 			hit =True
 			self.cache.pop(self.cache.index(v.lower()))
